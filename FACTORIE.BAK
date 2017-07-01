@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<conio.h>
+int Factoriel(int);
+void main (){
+clrscr();
+int n;
+cin >>n;
+cout << n;
+cout << "!=";
+cout << Factoriel(n);
+getch();
+}
+int Factoriel(int n)
+{
+int F=1;
+for (int i=2; i<=n; i++)
+F*=i;
+return (F);
+}
